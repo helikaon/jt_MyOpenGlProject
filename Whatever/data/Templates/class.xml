@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template_root name="Class">
+  <parameters>
+    <param id="Class" />
+    <param id="Namespace" />
+    <param id="Author" tag="global" />
+    <param id="Mail" tag="global" />
+    <param id="Copyright" tag="global" />
+    <param id="Header1" saved="Bachelor of Software Engineering" />
+    <param id="Header2" saved="Media Design School" />
+    <param id="Header3" saved="Auckland" />
+    <param id="Header4" saved="New Zealand" />
+  </parameters>
+  <files>
+    <file name="Interface File" filename="I%Class.h">
+#ifndef __I%Class_H__
+#define __I%Class_H__
+
+#pragma once
+
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: I%Class.h
+// Description	: Defines the I%Class interface.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+
+namespace %Namespace
+{
+	// Types
+				
+	// Constants
+				
+	// Prototypes
+	class I%Class
+	{
+		public:
+			I%Class() {};
+			virtual ~I%Class() {};
+						
+		protected:
+		private:
+					
+		public:
+		protected:
+		private:
+	};
+};
+
+#endif // __I%Class_H__
+		</file>
+    <file name="Header File" filename="C%Class.h">
+#ifndef __C%Class_H__
+#define __C%Class_H__
+
+#pragma once
+
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: C%Class.h
+// Description	: Defines the C%Class class.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+
+namespace %Namespace
+{
+	// Types
+				
+	// Constants
+				
+	// Prototypes
+	class C%Class
+	{
+		public:
+			C%Class();
+			~C%Class();
+						
+		protected:
+		private:
+					
+		public:
+		protected:
+		private:
+	};
+};
+
+#endif // __%Class_H__
+		</file>
+    <file name="Implementation File" filename="C%Class.cpp">
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: C%Class.cpp
+// Description	: Implements the C%Class class.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+#include "C%Class.h"
+			
+// This Includes
+
+namespace %Namespace
+{	
+	// Static Variables
+				
+	// Static Function Prototypes
+				
+	// Implementation
+	C%Class::C%Class()
+	{
+				
+	}
+				
+	C%Class::~C%Class()
+	{
+				
+	}
+};
+</file>
+  </files>
+</template_root>

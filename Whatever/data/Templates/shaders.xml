@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template_root name="DirectX Shaders">
+  <parameters>
+    <param id="Shader" />
+    <param id="Author" tag="global" />
+    <param id="Mail" tag="global" />
+    <param id="Copyright" tag="global" />
+  </parameters>
+  <files>
+    <file name="Vertex Shader" filename="%Shader_vs.hlsl">
+// %Copyright
+//
+// File Name	: %Shader_vs.hlsl
+// Description	: Implements the %Shader vertex shader.
+// Author		: %Author
+// Mail			: %Mail
+
+struct VS_IN
+{
+
+};
+
+struct VS_OUT
+{
+
+};
+
+VS_OUT main(VS_IN vIn)
+{
+	VS_OUT vOut;
+	return vOut;
+}
+	</file>
+    <file name="Geometry Shader" filename="%Shader_gs.hlsl">
+// %Copyright
+//
+// File Name	: %Shader_gs.hlsl
+// Description	: Implements the %Shader geometry shader.
+// Author		: %Author
+// Mail			: %Mail
+
+struct GS_IN
+{
+
+};
+
+struct GS_OUT
+{
+
+};
+
+[maxvertexcount(3)]
+void main(point GS_IN gIn[1], inout TriangleStream&lt;GS_OUT&gt; theStream)
+{
+	GS_OUT gOut;
+	theStream.Append(gOut);
+}
+	</file>
+    <file name="Pixel Shader" filename="%Shader_ps.hlsl">
+// %Copyright
+//
+// File Name	: %Shader_ps.hlsl
+// Description	: Implements the %Shader pixel shader.
+// Author		: %Author
+// Mail			: %Mail
+
+struct PS_IN
+{
+
+};
+
+float4 main(PS_IN vIn)
+{
+	return float4(1,1,1,1);
+}
+	</file>
+  </files>
+</template_root>

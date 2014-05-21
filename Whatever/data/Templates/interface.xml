@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template_root name="Interface">
+  <parameters>
+    <param id="Interface" />
+    <param id="Namespace" />
+    <param id="Author" tag="global" />
+    <param id="Mail" tag="global" />
+    <param id="Copyright" tag="global" />
+    <param id="Header1" saved="Bachelor of Software Engineering" />
+    <param id="Header2" saved="Media Design School" />
+    <param id="Header3" saved="Auckland" />
+    <param id="Header4" saved="New Zealand" />
+  </parameters>
+  <files>
+    <file name="Header File" filename="I%Interface.h">
+#ifndef __I%Interface_H__
+#define __I%Interface_H__
+
+#pragma once
+
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: I%Interface.h
+// Description	: Defines the I%Interface interface.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+
+namespace %Namespace
+{
+	// Types
+				
+	// Constants
+				
+	// Prototypes
+	class I%Interface
+	{
+		public:
+			I%Interface() {};
+			virtual ~I%Interface();
+						
+		protected:
+		private:
+					
+		public:
+		protected:
+		private:
+	};
+};
+
+#endif // __I%Interface_H__
+		</file>
+  </files>
+</template_root>

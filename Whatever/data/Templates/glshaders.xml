@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template_root name="OpenGL Shaders">
+  <parameters>
+    <param id="Shader" />
+    <param id="Author" tag="global" />
+    <param id="Mail" tag="global" />
+    <param id="Copyright" tag="global" />
+  </parameters>
+  <files>
+    <file name="Vertex Shader" filename="%Shader_vs.glsl">
+// %Copyright
+//
+// File Name	: %Shader_vs.glsl
+// Description	: Implements the %Shader vertex shader.
+// Author		: %Author
+// Mail			: %Mail
+
+#version 150
+
+in vec2 position;
+
+void main()
+{
+    gl_Position = vec4(position, 0.0, 1.0);
+}
+	</file>
+    <file name="Geometry Shader" filename="%Shader_gs.glsl">
+// %Copyright
+//
+// File Name	: %Shader_gs.glsl
+// Description	: Implements the %Shader geometry shader.
+// Author		: %Author
+// Mail			: %Mail
+
+#version 150
+
+layout(points) in;
+layout(line_strip, max_vertices = 2) out;
+
+void main() 
+{
+    gl_Position = gl_in[0].gl_Position + vec4(-0.1, 0.0, 0.0, 0.0);
+    EmitVertex();
+
+    gl_Position = gl_in[0].gl_Position + vec4(0.1, 0.0, 0.0, 0.0);
+    EmitVertex();
+
+    EndPrimitive();
+}
+	</file>
+    <file name="Pixel Shader" filename="%Shader_ps.glsl">
+// %Copyright
+//
+// File Name	: %Shader_ps.glsl
+// Description	: Implements the %Shader pixel shader.
+// Author		: %Author
+// Mail			: %Mail
+
+#version 150
+
+out vec4 outColor;
+
+void main()
+{
+    outColor = vec4(1.0, 1.0, 1.0, 1.0);
+}
+	</file>
+  </files>
+</template_root>

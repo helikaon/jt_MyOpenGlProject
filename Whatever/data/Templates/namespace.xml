@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template_root name="Namespace">
+  <parameters>
+    <param id="Namespace" />
+    <param id="Author" tag="global" />
+    <param id="Mail" tag="global" />
+    <param id="Copyright" tag="global" />
+    <param id="Header1" saved="Bachelor of Software Engineering" />
+    <param id="Header2" saved="Media Design School" />
+    <param id="Header3" saved="Auckland" />
+    <param id="Header4" saved="New Zealand" />
+  </parameters>
+  <files>
+    <file name="Header File" filename="%Namespace.h">
+#ifndef __%Namespace_H__
+#define __%Namespace_H__
+
+#pragma once
+
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: %Namespace.h
+// Description	: Defines the %Namespace namespace.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+			
+// Types
+			
+// Constants
+			
+// Prototypes
+namespace %Namespace
+{
+	
+};
+
+#endif // __%Namespace_H__
+		</file>
+    <file name="Implementation File" filename="%Namespace.cpp">
+//
+// %Header1
+// %Header2
+// %Header3
+// %Header4
+//
+// %Copyright
+//
+// File Name	: %Namespace.cpp
+// Description	: Implements the %Namespace namespace.
+// Author		: %Author.
+// Mail			: %Mail
+//
+			
+// Library Includes
+			
+// Local Includes
+#include "%Namespace.h"
+			
+// This Includes
+			
+// Static Variables
+			
+// Static Function Prototypes
+			
+// Implementation
+		</file>
+  </files>
+</template_root>
